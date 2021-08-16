@@ -22,12 +22,11 @@ React Child:
 ## Membuat dengan CRA
 
 -   init project dengan CRA
--   jelaskan JSX
--   menjelaskan class component dan mention functional
--   membuat class component
--   masuk ke sample styling
--   loop
--   input onchange arrow func atau .bind()
+-   JSX ?
+-   class component vs functional
+-   sample inline styling
+-   loop component
+-   input onchange arrow func() atau .bind()
 -   submit input (update todos)
 -   setState() -> membawa method bawaan untuk merubah state
     memungkinkan untuk me rerender views nya. Ngasih tahu ini ada perubahan state. Tolong render ulang.
