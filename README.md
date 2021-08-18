@@ -1,61 +1,33 @@
-# Intro to React.js
+# Hooks
 
-## Website React.js
+## Doc & Motivation
 
-## Mencoba CDN
+https://reactjs.org/docs/hooks-intro.html
 
--   buat file `index.html`
--   import cdn dari web react
--   buat index.js dan import script di html
--   ```js
-    ReactDOM.render(React.createElement("h1", {}, "Hello React js"), container);
-    ```
--   buat child dengan membuat component createElement, disimpan di array
--   buat class component dengan creteElement
+## Functional Component?
 
-React Child:
+-   react functional component seperti function biasa di JS yang mereturn jsx
 
--   string
--   component
--   array of component
+## Hooks?
 
-## Membuat dengan CRA
+React 16.8.0
+Fitur state, lifecycle, dll tanpa class
 
--   init project dengan CRA
--   JSX ?
--   class component vs functional
--   sample inline styling
--   loop component
--   input onchange arrow func() atau .bind()
--   submit input (update todos)
--   setState() -> membawa method bawaan untuk merubah state
-    memungkinkan untuk me rerender views nya. Ngasih tahu ini ada perubahan state. Tolong render ulang.
+### Rules
 
-## Class Component Lifecycle
+-   memanggil hanya di react function component
+-   memanggil hook di custom hooks
 
--   componentDidMount()
-    ```js
-    componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/todos')
-            .then(response => response.json())
-            .then(json => {
-                // set state todos
-            })
-    }
-    ```
--   componentDidUpdate()
--   componentWillUnmount()
+## Functional Component?
 
-## Component Props
+-   `useState(initailState)`
+    -> mengembalikan `[initialState, functionDispacth]`
 
--   mengirim data state ataupun method dari attribute (this.props)
+-   `useEffect(arg1, arg2)`
+    -   tanpa `arg2`: efek updating setiap perubahan state (semua state)
+    -   arg2 diberi `[]`: efek berjalan sekali saat mounting (mirip componentDidMount)
+    -   mengunakan nama2 deps di arg2 `[dep, ...]`: efek dijalankan ketika deps mengalami perubahan
 
-## Glosarium
+## Custom Hooks
 
--   Declarative - Imperative
-    Declarative : Membuat expression tanpa memikirkan control flow
-    Imperative : Harus tau datanya dari flow yang dikerjakan contoh JQuery
-
-## Additional
-
--   React Dev tools
+-   awalan `use[]`
