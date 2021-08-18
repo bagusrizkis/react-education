@@ -2,7 +2,7 @@
  * - class component
  *    - lifecycle
  * - function component
- *    - data biasa
+ *    - tampilan biasa
  *    -
  */
 
