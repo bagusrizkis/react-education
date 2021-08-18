@@ -18,7 +18,7 @@ Fitur state, lifecycle, dll tanpa class
 -   memanggil hanya di react function component
 -   memanggil hook di custom hooks
 
-## Functional Component?
+## Builtin Hooks?
 
 -   `useState(initailState)`
     -> mengembalikan `[initialState, functionDispacth]`
