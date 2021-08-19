@@ -1,0 +1,21 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.item {
+    padding: 5px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+    color: brown;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
