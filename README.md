@@ -1,35 +1,73 @@
-# React Native
+# React Navigation
 
-### Expo ?
+https://reactnavigation.org/docs/getting-started
 
--   Keunggulan:
-    -   SDK tanpa setup2 (via cli)
-    -   Langsung bisa berjalan di emulator atau device
-    -   Setup mudah
-    -   Mode debug
-    -   Rilis aplikasi lebih mudah
--   limitasi: <br />
-    https://docs.expo.dev/introduction/why-not-expo/
+## Nav?
 
-### Install
+-   Stack
+-   Tab
 
-### Pratice
+-   Drawer
 
--   state, useState()
--   fetch data, useEffect()
+## Tab
 
-#### Core Component
+https://reactnavigation.org/docs/tab-based-navigation
 
--   View, Text
--   SaveAreaView
+-   install package
+-   Membuat 2 screen: Home dan Setting
+
     ```js
-    import { SafeAreaView } from "react-native-safe-area-context";
+    <NavigationContainer>
+        <Tab.Navigator>
+            <Tab.Screen name="" component={} />
+        </Tab.Navigator>
+    </NavigationContainer>
     ```
--   Styling (default flex, inline, styleSheet)
--   TextInput (onChangeText) and Button (onPress)
--   Scroll Content (Flatlist dan ScrollView)
--   Touchable
 
-#### Mirroring
+-   ionic icon
+-   Navigator to Component
 
--   scrcpy
+## Stack
+
+-   install pakckage
+
+    https://reactnavigation.org/docs/hello-react-navigation
+
+-   membuat stack screen
+
+    ```js
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="">
+            <Stack.Screen name="" component={} />
+        </Stack.Navigator>
+    </NavigationContainer>
+    ```
+
+-   props - navigation.navigate()
+-   send Params di argument kedua `navigation.navigate('ScreenName', {bar: "foo"})`
+
+# Gesture Handler
+
+-   install package
+
+    https://docs.swmansion.com/react-native-gesture-handler/docs/
+
+-   common gesture property
+
+    https://docs.swmansion.com/react-native-gesture-handler/docs/api/gesture-handlers/common-gh
+
+    -   onGestureEvent
+    -   onHandlerStateChange
+    -   ...
+
+-   pan gesture handler
+
+    `import { PanGestureHandler } from "react-native-gesture-handler"`
+
+-   pinch gesture handler
+
+    `import { PinchGestureHandler } from "react-native-gesture-handler"`
+
+-   long tap gesture handler ( optional)
+
+    `import { LongPressGestureHandler } from "react-native-gesture-handler"`
